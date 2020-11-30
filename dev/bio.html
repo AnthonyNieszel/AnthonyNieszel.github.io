@@ -76,21 +76,29 @@ img.emoji {
 <!-- desktop -->
 
 <div class = "section-inner">
+
 <ul class = "main-menu">
-<li id = "menu-item-9" class = "menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-9">
-    <a href = "https://anthonynieszel.github.io/">Home</a></li>
+
+    <li id = "menu-item-9" class = "menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-9">
+        <a href = "https://anthonynieszel.github.io/">Home</a></li>
+    <li id = "menu-item-10" class = "menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-10">
+            <a href = "https://anthonynieszel.github.io/pages/testpage.html">Projects</a></li>
+
 </ul>
+
 </div>
 
-<!-- mobile -->
+<!-- menu button displayed when viewport is small enough -->
 
-<button type="button" class="nav-toggle">
-<div class="bars">
-<div class="bar"></div>
-<div class="bar"></div>
-<div class="bar"></div>
+<button type = "button" class = "nav-toggle">
+<div class = "bars">
+<div class = "bar"></div>
+<div class = "bar"></div>
+<div class = "bar"></div>
 </div>
 </button>
+
+<!-- mobile -->
 
 <div class = "mobile-navigation">
 <ul class = "mobile-menu">
@@ -101,27 +109,39 @@ img.emoji {
 </div>
 
 <!-- background image for the page -->
-<div class="header-image" style="background-image: url( https://andersnoren.se/themes/hitchcock/wp-content/themes/hitchcock/assets/images/bg.jpg );"></div>
+<div class = "header-image" style = "background-image: url( https://andersnoren.se/themes/hitchcock/wp-content/themes/hitchcock/assets/images/bg.jpg );"></div>
 
-<!-- header -->
-<div class="header section-inner">
-<div class="blog-title">Welcome!</div>
-<div class="blog-description">
-    <p>description or some blurb goes here</p>
+<!-- page content header (outside of container) -->
+<div class = "header section-inner">
+<div class = "blog-title"><span style = "color: #fff">Welcome!</span></div>
+<div class = "blog-description">
+    <p>description or some blurb goes here? maybe delete?</p>
 </div>
 </div>
 
-<main id="site-content">
-<div class="content section-inner">
-<div id="post-5" class="single single-post post-5 page type-page status-publish hentry">
-<div class="post-container">
-<div class="post-header">
-<h1 class="post-title">Style Guide</h1>
-</div>
-<div class="post-inner">
-<div class="post-content entry-content">
-<p>This style guide demonstrates the default presentation of elements in Hitchcock. The page can also be used as a blueprint for how to present content within the theme in an effective way.</p>
+<!-- main page content (inside container) -->
+<main id = "site-content">
+<div class = "content section-inner">
+<div id = "post-5" class = "single single-post post-5 page type-page status-publish hentry">
+<div class = "post-container">
+    <div class = "post-header">
+        <h1 class = "post-title">My Background</h1>
+    </div>
+
+<div class = "post-inner">
+<div class = "post-content entry-content">
+
+    <div id = "headshot" style = "width: 682px" class = "wp-caption aligncenter">
+        <a href = "https://anthonynieszel.github.io/img/an1.jpg">
+        <img aria-describedby = "caption-headshot" loading = "lazy" class = "size-large wp-image-29"
+        src = "https://anthonynieszel.github.io/img/an1.jpg"
+            alt = "It's me!" width = "672" height = "447" /></a>
+        <p id = "caption-headshot" class = "wp-caption-text">seeing how a png looks in this div.</p>
+    </div>
+    <p>This is where the executive summary will go.</p>
+
 <hr />
+
 <h1>Heading one</h1>
 <h2>Heading two</h2>
 <h3>Heading three</h3>
@@ -206,16 +226,32 @@ img.emoji {
 </table>
 <hr />
 <h3>Post Media</h3>
+
+<!-- left align -->
+
 <h4>Left aligned</h4>
+
 <div id="attachment_29" style="width: 682px" class="wp-caption alignleft"><a href="http://www.andersnoren.se/themes/fukasawa/wp-content/uploads/2014/08/typewriter.jpg"><img aria-describedby="caption-attachment-29" loading="lazy" class="size-large wp-image-29" src="http://www.andersnoren.se/themes/fukasawa/wp-content/uploads/2014/08/typewriter-1024x682.jpg" alt="A left aligned typewriter." width="672" height="447" /></a><p id="caption-attachment-29" class="wp-caption-text">A left aligned typewriter.</p></div>
+
 <p>This is an image of a typewriter, aligned to the left. It also has a small caption. On smaller screen sizes, the image (and the caption) will clear the content and be centered in the content container. For the floated image to look good, the surrounding text will need to be of a certain length. That&#8217;s why I&#8217;m writing this filler text: A typewriter is a mechanical or electromechanical machine for writing in characters similar to those produced by printer&#8217;s movable type by means of keyboard-operated types striking a ribbon to transfer ink or carbon impressions onto the paper.</p>
+
+<!-- right align -->
+
 <h4>Right aligned</h4>
+
 <div id="attachment_29" style="width: 682px" class="wp-caption alignright"><a href="http://www.andersnoren.se/themes/fukasawa/wp-content/uploads/2014/08/typewriter.jpg"><img aria-describedby="caption-attachment-29" loading="lazy" class="size-large wp-image-29" src="http://www.andersnoren.se/themes/fukasawa/wp-content/uploads/2014/08/typewriter-1024x682.jpg" alt="A right aligned typewriter." width="672" height="447" /></a><p id="caption-attachment-29" class="wp-caption-text">A right aligned typewriter.</p></div>
+
 <p>This is an image of a typewriter, aligned to the right. It also has a small caption. On smaller screen sizes, the image (and the caption) will clear the content and be centered in the content container. For the floated image to look good, the surrounding text will need to be of a certain length. That&#8217;s why I&#8217;m writing this filler text: Typically one character is printed per keypress. The machine prints characters by making ink impressions of type elements similar to the sorts used in movable type letterpress printing.</p>
+
+<!-- center align -->
+
 <h4>Center aligned</h4>
+
 <div id="attachment_29" style="width: 682px" class="wp-caption aligncenter"><a href="http://www.andersnoren.se/themes/fukasawa/wp-content/uploads/2014/08/typewriter.jpg"><img aria-describedby="caption-attachment-29" loading="lazy" class="size-large wp-image-29" src="http://www.andersnoren.se/themes/fukasawa/wp-content/uploads/2014/08/typewriter-1024x682.jpg" alt="A right aligned typewriter." width="672" height="447" /></a><p id="caption-attachment-29" class="wp-caption-text">A center aligned typewriter.</p></div>
+
 <p>This is a center aligned image. It also has a small caption. After their invention in the 1860s, typewriters quickly became indispensable tools for practically all writing other than personal correspondence. They were widely used by professional writers, in offices, and for business correspondence in homes.</p>
 <hr />
+
 <h3>Forms</h3>
 <fieldset>
 <legend>Fieldset</legend>
